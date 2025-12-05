@@ -26,6 +26,7 @@ function App() {
   </h1>
     <Routes>
     <Route path="/" element={<Home />} />
+    <Route path="/categories" element={<Category />} />
     <Route path="/categories/:categoryId" element={<Category />} />
     <Route path="/categories/:categoryId/questions/:questionId" element={< Questions />} />}
     <Route path="/about" element={<About />} />
