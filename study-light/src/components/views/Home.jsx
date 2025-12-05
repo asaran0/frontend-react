@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { categories } from '../data/questions';
+import { categories } from '../../data/questions';
 import Category from './Category';
-import Counter from '../components/Counter';
+import Counter from '../Counter';
 export default function Home() {
   return (
     <div>

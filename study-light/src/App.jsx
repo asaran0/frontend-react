@@ -3,16 +3,15 @@ import './App.css';
 import './styles/global.css';
 import './styles/layout.css';
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import User from "./pages/User";
-//import Dashboard from "./pages/Dashboard";
-import DashboardHome from"./pages/Dashboard/DashboardHome";
-import DashboardLayout from"./pages/Dashboard/DashboardLayout";
-import DashboardSettings from"./pages/Dashboard/DashboardSettings";
-import PrivateRoute from"./pages/components/PrivateRoute";
-import Questions from './pages/Questions';
-import Category from './pages/Category';
+import Home from './components/views/Home';
+import About from './components/views/About';
+import User from './components/views/User';
+import DashboardHome from "./components/dashboard/DashboardHome";
+import DashboardLayout from"./components/dashboard/DashboardLayout";
+import DashboardSettings from"./components/dashboard/DashboardSettings";
+import PrivateRoute from "./route/PrivateRoute";
+import Questions from './components/views/Questions';
+import Category from './components/views/Category';
 import Header from './components/Header';
 function App() {
   return (
