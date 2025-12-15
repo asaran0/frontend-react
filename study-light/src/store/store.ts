@@ -1,0 +1,8 @@
+import AppDataReducer from './appDataSlice';
+import { configureStore } from "@reduxjs/toolkit"
+
+export const store = configureStore({
+    reducer: {
+        appData: AppDataReducer,
+    },
+});
