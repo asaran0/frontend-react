@@ -14,21 +14,30 @@ export const appDataSlice = createSlice({
 name: 'appData',
 initialState,
 reducers: {
-incrementCounter(state) {
+        incrementCounter: (state) => {
             state.counter += 1;
             },
-        decrementCounter(state) {
+        decrementCounter: (state) =>{
             state.counter -= 1;
             },
-        setCounter(state, action) {
+        setCounter: (state, action) => {
             state.counter = action.payload;
             },
-        setAuthToken(state, action) {
+        setAuthToken: (state, action) =>{
             state.authToken = action.payload;
             },
-        setIsAuthenticated(state, action) {
+        setIsAuthenticated: (state, action) => {
             state.isAuthenticated = action.payload;
             },
+            setIsAdmin: (state, action) => {
+                state.isAdmin = action.payload
+            },
+            setIsLoading: (state, action) => {
+                state.isLoading = action.payload
+            },
+            setLoginMessage: (state, action) => {
+                state.loginMessage = action.payload
+            }
         }
     });
 

@@ -2,7 +2,7 @@
 export interface User {
     id: number;
     email: String;
-    Name: String;
+    name: String;
 }
 export interface AppData {
     authToken?: String;
